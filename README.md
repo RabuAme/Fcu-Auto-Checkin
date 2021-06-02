@@ -21,3 +21,4 @@ Your FCU Password
  3. Run [toEXE.bat](toEXE.bat)
  4. Move FCU.exe from dist folder to FCU folder
  5. Run FCU.exe
+ 6. You can delete folder _pycache_ , build and file FCU.spec after all
