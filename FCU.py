@@ -4,7 +4,7 @@ import pytesseract #pip install pytesseract
 from selenium import webdriver #pip install selenium
 from selenium.webdriver.common.keys import Keys
 from PIL import Image #pip install pillow
-import myconstants #儲存帳號密碼的檔案
+import Myconstants #儲存帳號密碼的檔案
 
 driver = webdriver.Chrome() #開啟瀏覽器,先下載正確版本之chromedrivere(https://chromedriver.chromium.org/downloads)
 driver.get('https://signin.fcu.edu.tw/clockin/login.aspx') #開啟學校網站
@@ -13,11 +13,11 @@ driver.maximize_window() #最大化畫面
 time.sleep(1)
 
 user_input = driver.find_element_by_css_selector('#LoginLdap_UserName') #找到帳號儲存格
-user_input.send_keys(myconstants.NID) #輸入帳號
+user_input.send_keys(Myconstants.NID) #輸入帳號
 time.sleep(1)
 
 user_input = driver.find_element_by_css_selector('#LoginLdap_Password') #找到密碼儲存格
-user_input.send_keys(myconstants.Password) #輸入密碼
+user_input.send_keys(Myconstants.Password) #輸入密碼
 time.sleep(1)
 
 login_lable = driver.find_element_by_css_selector('#LoginLdap_LoginButton') #找到登入按鈕
