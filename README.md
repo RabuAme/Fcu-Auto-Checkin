@@ -23,6 +23,6 @@ Your FCU Password
  1. Edit [Myconstants.py](Myconstants.py)
  2. First way: Install dependencies: `pip install -r requirements.txt` , Second way: Run [pip.bat](pip.bat)
  3. Run [toEXE.bat](toEXE.bat)
- 4. Move FCU.exe from dist folder to FCU folder
+ 4. Move FCU.exe from dist folder to FCU folder(with chromedriver)
  5. Run FCU.exe
  6. You can delete folder _pycache_ , build and file FCU.spec after all
