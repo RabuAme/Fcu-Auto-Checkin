@@ -1,0 +1,23 @@
+安裝Python3.X(我是用3.7)
+安裝Sublime Text(其他軟體也可以)
+下載正確版本chromedriver(https://chromedriver.chromium.org/downloads)
+
+運行pip.bat
+如果失敗，打開CMD輸入，pip install -r 然後將requirement.txt拖動至cmd窗口，enter
+
+下載upx(https://upx.github.io/)
+將upx.exe移動至 'Python安裝路徑\Scripts' 中
+
+打開myconstants.py
+更改你的NID與密碼
+
+打開myconstants.py
+更改你的NID與密碼
+
+方法(1)	運行FCU.py
+
+方法(2)	運行toEXE.bat
+		進入dist資料夾將FCU.exe拉到FCU資料夾中
+		_pycache_和build資料夾可刪除
+		FCU.spec可刪除
+		運行FCU.exe
