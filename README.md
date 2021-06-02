@@ -1,4 +1,8 @@
 # Fcu-Auto-Checkin
+I'm a beginner of coding, and this is my first program.
+
+If there are any bugs there, please tell me.
+
 ## Prerequisites  
   
  - Python3 ([Download](https://www.python.org/downloads/))
