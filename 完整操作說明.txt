@@ -1,5 +1,4 @@
-安裝Python3.X(我是用3.7)
-安裝Sublime Text(其他軟體也可以)
+安裝Python3
 下載正確版本chromedriver(https://chromedriver.chromium.org/downloads)
 
 運行pip.bat
