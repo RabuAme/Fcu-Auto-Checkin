@@ -7,6 +7,7 @@ If there are any bugs there, please tell me.
   
  - Python3 ([Download](https://www.python.org/downloads/))
  - Chromedriver(Please download the correct version of your Chrome) ([Download](https://chromedriver.chromium.org/downloads))
+ - Tesseract-OCR ([Download](https://github.com/UB-Mannheim/tesseract/wiki))
 
 ## Myconstants.py
  - **NID:**  
