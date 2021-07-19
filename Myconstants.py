@@ -1,2 +1,3 @@
-NID = '你的學號'  #務必保留引號
-Password = '你的密碼'  #務必保留引號
+NID = 'D0776487'  #務必保留引號
+Password = 'Qaz125280'  #務必保留引號
+Tesseract = 'D:/Program Files/Tesseract-OCR/tesseract.exe'
