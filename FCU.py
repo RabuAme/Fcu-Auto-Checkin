@@ -64,7 +64,7 @@ def ReadCaptcha():
   image.resize((150, 50), Image.ANTIALIAS).save("captcha.png") #縮放驗證碼(大小,銳化),儲存
 
   img = cv2.imread('captcha.png', 0) #讀取驗證碼圖片
-  ret, out1 = cv2.threshold(img, 120, 255, cv2.THRESH_BINARY) #驗證碼圖片二值化
+  ret, out1 = cv2.threshold(img, 125, 255, cv2.THRESH_BINARY) #驗證碼圖片二值化
   name = ['BINARY'] #圖片名稱
   image = [out1] #圖像矩陣暫存名稱
 
@@ -74,6 +74,7 @@ def ReadCaptcha():
 
     image2 = Image.open('BINARY.png') #開啟二值化驗證碼圖片
 
+  pytesseract.pytesseract.tesseract_cmd = (Myconstants.Tesseract)
   captcha = pytesseract.image_to_string(image2, config="-c tessedit_char_whitelist=0123456789").replace(" ", "").replace("-", "").replace("$", "") #利用內建pytesseract讀取驗證碼文字
   return captcha #讀取驗證碼
 
