@@ -74,7 +74,7 @@ def ReadCaptcha():
 
     image2 = Image.open('BINARY.png') #開啟二值化驗證碼圖片
 
-  pytesseract.pytesseract.tesseract_cmd = (Myconstants.Tesseract)
+  pytesseract.pytesseract.tesseract_cmd = (Myconstants.Tesseract) #設定Tesseract路徑
   captcha = pytesseract.image_to_string(image2, config="-c tessedit_char_whitelist=0123456789").replace(" ", "").replace("-", "").replace("$", "") #利用內建pytesseract讀取驗證碼文字
   return captcha #讀取驗證碼
 
