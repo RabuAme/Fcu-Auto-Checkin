@@ -14,6 +14,8 @@ If there are any bugs there, please tell me.
 Your NID number
  - **Password:**  
 Your FCU Password
+ - **Tesseract:**  
+Your Tesseract-ocr path
 
 ## Run the script
  1. Edit [Myconstants.py](Myconstants.py)
